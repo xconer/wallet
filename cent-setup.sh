@@ -21,3 +21,9 @@ sudo snap install core
 sudo snap refresh core
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+sleep 3
+
+wget https://raw.githubusercontent.com/xconer/wallet/main/nginx.conf -O /etc/nginx/nginx.conf
+sleep 2
+systemctl restart nginx
