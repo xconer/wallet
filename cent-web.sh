@@ -16,12 +16,7 @@ sudo yum install -y nodejs
 npm i pm2 bytenode -g
 
 sudo yum install epel-release -y
-sudo yum install snapd -y
-sudo systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install core
-sudo snap refresh core
-sudo snap install --classic certbot
+sudo yum install certbot python2-certbot-nginx -y
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 sleep 3
