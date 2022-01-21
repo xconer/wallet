@@ -33,3 +33,4 @@ unzip wallet.zip
 sleep 1
 cd /home/wallet
 npm i
+npm i async-lock --save
