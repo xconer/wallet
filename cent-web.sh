@@ -33,3 +33,4 @@ unzip web.zip
 sleep 1
 cd /home/web
 npm i
+npm i async-lock --save
